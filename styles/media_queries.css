@@ -1,0 +1,99 @@
+
+/* Medium screens */
+@media only screen and (min-width: 1026px){
+	#header-items {	
+	margin-bottom: 40px;
+	height: 470px;
+
+	}
+
+	#berg{
+		width: 470px;
+		margin-top: -30px;
+	}
+
+	#clock{
+		width: 310px;
+		height: 310px;
+		margin-top: 15%;
+	}
+
+	#digital-time{
+		margin-left: 39%;
+		margin-top: -37%;
+		padding-bottom: 79px;
+		
+	}
+
+	h1{
+		font-size: 36px;
+	}
+
+	.lines1{
+		display: none;
+	}
+
+	.lines2{
+		display: block;
+		width: 70%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.vertical{
+		display: block;
+		position: absolute;
+		border-right: 1px solid #93BAE9;
+		height: 120px;
+		left: 50%;
+		top: 530px;
+	}
+
+	.left {
+	  padding-left: 10%;
+	  margin: 30px 0px 30px 0px;
+	 }
+
+	.right, #tijdzone{
+		margin-right: 12%;
+		line-height: 26px;
+		margin-top: -10%;
+	}
+
+	.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: 
+    "ad1 ad2" 
+    "ad3 ad4";
+	}
+
+	.item1 { grid-area: ad1; }
+
+	.item2 { grid-area: ad3; }
+
+	.item3 { grid-area: ad2; }
+
+	.item4 { grid-area: ad4; }
+
+}
+
+
+/* Large screens */
+@media only screen and (min-width: 1800px){
+
+	.left {
+	  padding-left: 12%;
+	  margin: 30px 0px 30px 0px;
+	 }
+
+	.right, #tijdzone{
+		margin-right: 15%;
+		line-height: 26px;
+		margin-top: -5%;
+	}
+
+}

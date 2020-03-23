@@ -1,0 +1,159 @@
+body{
+	color: white;
+	background-color: #001B58;
+  	font-family: helvetica, sans-serif;
+  	letter-spacing: 1px;
+}
+
+h1{
+	color: #001B58;
+	font-size: 26px;
+	font-weight: 100;
+	/*z-index: 2;*/
+}
+
+p{
+	font-weight: 100;
+}
+
+#header-items {
+	background-image:
+	radial-gradient(circle at top right, #C7EBE3, #6EBEC9 );	
+	margin: -10px -10px 20px -10px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#berg{
+	margin: auto;
+	width: 280px;
+	margin-top: -52px;
+}
+
+#clock{
+	background-color: white;
+	border-radius: 50%;
+	width: 185px;
+	height: 185px;
+	box-shadow: 3px 4px 12px -1px #5FA4AE;
+	margin: auto;
+	margin-top: 24%;
+}
+
+#digital-time{
+	margin: auto;
+	margin-top: -38%;
+	padding-bottom: 74px;
+	margin-left: 37%;
+}
+
+.lines1{
+  width: 85%;
+  border: 0.5px solid #93BAE9;
+  box-shadow: 0px 0px 6px #93BAE9;
+  margin-bottom: 20px;
+ }
+
+.lines2{
+	display: none;
+	width: 85%;
+	border: 0.5px solid #93BAE9;
+	box-shadow: 0px 0px 6px #93BAE9;
+	margin-bottom: 20px;
+}
+
+.vertical{
+	display: none;
+}
+
+ .column{
+ 	justify-content: space-between;
+ 	flex-direction: row;
+ 	flex-basis: auto;
+ }
+
+
+/* Information styles */
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+ .item1, .item2, .item3, .item4{
+  padding: 0px 16px 10px 30px;
+  margin-top: -12px;
+ }
+
+.right{
+	justify-content: space-between;
+	text-align: right;
+	margin-top: -34px;
+	margin-right: 15px;
+}
+
+#tijdzone{
+	font-weight: 400;
+	line-height: 20px;
+}
+
+/* Ipad screens */
+@media only screen and (min-width: 650px) and (max-width: 1025px){
+
+#header-items {	
+	margin-bottom: 40px;
+	height: 560px;
+	}
+
+#berg{
+	width: 550px;
+	margin-top: -30px;
+}
+
+#clock{
+	width: 390px;
+	height: 390px;
+	margin-top: 16%;
+}
+
+#digital-time{
+	margin-left: 38%;
+	margin-top: -40%;
+	padding-bottom: 78px;
+	
+}
+
+h1{
+	font-size: 46px;
+}
+
+.left {
+  padding-left: 10%;
+  font-size: 26px;
+  margin: 30px 0px 30px 0px;
+ }
+
+.right, #tijdzone{
+	margin-right: 12%;
+	font-size: 26px;
+	line-height: 34px;
+	margin-top: -6%;
+}
+
+.lines1{
+	width: 75%;
+}
+
+
+}
+
+
+
+
+
