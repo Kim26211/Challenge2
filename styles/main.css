@@ -18,7 +18,8 @@ p{
 
 #header-items {
 	background-image:
-	radial-gradient(circle at top right, #C7EBE3, #6EBEC9 );	
+	radial-gradient(circle at top right, #C7EBE3, #6EBEC9 );
+	/*background-color: #C7EBE3;*/
 	margin: -10px -10px 20px -10px;
 	height: 300px;
 	display: flex;

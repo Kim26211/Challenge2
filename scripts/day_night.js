@@ -1,70 +1,26 @@
 
-function updateColor() {
-	  var 
-	    hr = (new Date()).getHours(),
-	    body = document.body,
-	    bstyle = body.style,    
-	    document.getElementById('header-items').style.background = color;
-	    /*hello = document.querySelector(".header-items");*/    
-	  if (hr >= 6 || < 12) {
-	    bstyle.backgroundColor = #FFD9B9;
-	    bstyle.color = "white";
-	    /*hello.innerText = "Goedemorgen!";*/
-	  } else if (hour >= 12 || hour < 18) {
-	    bstyle.backgroundColor = #C7EBE3;
-	    bstyle.color = "white";
-	    /*hello.innerText ="Goedemiddag!";*/
-	  }
-	  	else if (hour >= 18 || hour < 0) {
-	    bstyle.backgroundColor = #A4AEEB;
-	    bstyle.color = "white";
-	    /*hello.innerText ="Goedenavond!";*/
-	  }
-	   else {
-	    bstyle.backgroundColor = #001340;
-	    bstyle.color = "white";
-	    /*hello.innerText = "Goedenacht!";*/
-	  } 
-	}
-
-	setInterval(updateColor, 1000 * 60);
-	updateColor();
-
-
-
-/*var now = new Date();
-var h = today.getHours()
-
-function updateTimeOfDay(){
-	document.getElementById('digital-time').innerHTML = hours;
-}
-
 function updateColors(){
-	if()
+	var now = new Date();
+	var h = now.getHours();
+		
+	if (h >= 12 || h < 18){
+		document.getElementById('header-items').style.backgroundImage = 'radial-gradient(circle at top right, #C7EBE3, #6EBEC9)';
+		document.getElementById('zon').style.backgroundImage = 'linear-gradient(#FDF980, #EBDF7F)';
+		document.getElementById('clock').style.boxShadow = '3px 4px 12px -1px #5FA4AE';
+	} else if (h >= 6 || h < 12){
+		document.getElementById('header-items').style.backgroundImage = 'radial-gradient(circle at top right, #FFEEE0, #FFB97E)';
+		document.getElementById('zon').style.backgroundImage = 'linear-gradient(#FFE200, #FF9E6A)';
+		document.getElementById('clock').style.boxShadow = '3px 4px 12px -1px #DC9F6D';
+	} else if (h >= 18 || h < 0) {
+		document.getElementById('header-items').style.backgroundImage = 'radial-gradient(circle at top right, #F3ECFA, #A4AEEB)';
+		document.getElementById('zon').style.backgroundImage = 'linear-gradient(#FD96E8, #F06AA3)';
+		document.getElementById('clock').style.boxShadow = '3px 4px 12px -1px #969DCB';
+	} else {
+		document.getElementById('header-items').style.backgroundImage = 'radial-gradient(circle at top right, #002376, #001340)';
+		document.getElementById('zon').style.backgroundImage = 'linear-gradient(#FFFFFF, #CCFFF9)';
+		document.getElementById('clock').style.boxShadow = '3px 4px 12px -1px #001037';
+	} 
 
-}*/
+}
+	updateColors();
 
-/*var hour = new Date().getHours();
-
-
-	function updateColors(){
-		if (hour >= 12 || hour < 18){
-			background-image:
-			radial-gradient(circle at top right, #C7EBE3, #6EBEC9 );
-		}
-
-		else if (hour >= 18 || hour < 0){
-			background-image:
-			radial-gradient(circle at top right, #A4AEEB, #F3ECFA );
-		}
-
-		else if(hour >= 0 || hour < 6){
-			background-image:
-			radial-gradient(circle at top right, #001340, #002376 );
-		}
-
-		else {
-			background-image:
-			radial-gradient(circle at top right, #FFD9B9, #FFFFFF );
-		}
-	}*/

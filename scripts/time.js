@@ -14,7 +14,6 @@ document.getElementById('digital-time').innerHTML = today.toString();
 	var maanden = new Array('januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december');
 	document.getElementById('date').innerHTML = today.getDate() + ' ' + maanden[today.getMonth()];
 
-
 	document.getElementById('year').innerHTML = today.getFullYear();
 
 
